@@ -34,46 +34,46 @@ import Layout from '@/layout'
  * a base page that does not have permission requirements
  * all roles can be accessed
  */
-const visRoute = []
-// const visRoute = [
+var visRoute = []
+//visRoute = [
 //   {
 //     path: '/webview/contact',
-//     component: () => import('@/views/webview/contact'),
+//     component: () => import('@/views/chaofun-webview/contact'),
 //     name: 'contact',
 //     meta: { title: '联系我们&意见反馈'},
 //     hidden: true
 //   },
 //   {
 //     path: '/webview/buttonGame',
-//     component: () => import('@/views/webview/buttonGame'),
+//     component: () => import('@/views/chaofun-webview/buttonGame'),
 //     name: 'buttonGame',
 //     meta: { title: 'buttonGame'},
 //     hidden: true
 //   },
 //   {
 //     path: '/webview/forum/seting',
-//     component: () => import('@/views/webview/forum/seting'),
+//     component: () => import('@/views/chaofun-webview/forum/seting'),
 //     name: 'forumseting',
 //     meta: { title: 'forumseting'},
 //     hidden: true
 //   },
 //   {
 //     path: '/webview/activity/index',
-//     component: () => import('@/views/webview/activity/index'),
+//     component: () => import('@/views/chaofun-webview/activity/index'),
 //     name: 'activityindex',
 //     meta: { title: 'activityindex'},
 //     hidden: true
 //   },
 //   {
 //     path: '/webview/buttonGame/rank',
-//     component: () => import('@/views/webview/buttonGame/rank'),
+//     component: () => import('@/views/chaofun-webview/buttonGame/rank'),
 //     name: 'rank',
 //     meta: { title: 'rank'},
 //     hidden: true
 //   },
 //   {
 //     path: '/webview/secret',
-//     component: () => import('@/views/webview/secret/index'),
+//     component: () => import('@/views/chaofun-webview/secret/index'),
 //     name: 'webViewSecret',
 //     meta: { title: 'secret'},
 //     hidden: true

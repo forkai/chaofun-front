@@ -2,7 +2,7 @@
 node_modules
 /dist
 dist
-/src/views/webview/
+/src/views/chaofun-webview/
 
 # local env files
 .env.local
