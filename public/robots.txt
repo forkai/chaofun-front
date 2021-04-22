@@ -1,0 +1,14 @@
+User-agent: *
+Disallow:
+Sitemap: https://chao.fun/sitemap_index.xml
+Sitemap: https://chao.fun/chao_fun_sitemap_11.xml
+Sitemap: https://chao.fun/chao_fun_sitemap_10.xml
+Sitemap: https://chao.fun/chao_fun_sitemap_9.xml
+Sitemap: https://chao.fun/chao_fun_sitemap_8.xml
+Sitemap: https://chao.fun/chao_fun_sitemap_7.xml
+Sitemap: https://chao.fun/chao_fun_sitemap_6.xml
+Sitemap: https://chao.fun/chao_fun_sitemap_5.xml
+Sitemap: https://chao.fun/chao_fun_sitemap_4.xml
+Sitemap: https://chao.fun/chao_fun_sitemap_3.xml
+Sitemap: https://chao.fun/chao_fun_sitemap_2.xml
+Sitemap: https://chao.fun/chao_fun_sitemap_1.xml

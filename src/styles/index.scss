@@ -1,0 +1,417 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+@import './btn.scss';
+*{
+  -webkit-overflow-scrolling: touch;
+}
+
+.van-toast{
+  z-index: 3000 !important;
+}
+
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.el-col{
+  padding-bottom: 50px;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.padding-content {
+  padding: 4px 0;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.block {
+  display: block;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.inlineBlock {
+  display: block;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+aside {
+  background: #eef1f6;
+  padding: 8px 24px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  display: block;
+  line-height: 32px;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #2c3e50;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  a {
+    color: #337ab7;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(32, 160, 255);
+    }
+  }
+}
+
+//main-container全局样式
+.app-container {
+  padding: 20px;
+}
+
+.components-container {
+  margin: 30px 50px;
+  position: relative;
+}
+
+.pagination-container {
+  margin-top: 30px;
+}
+
+.text-center {
+  text-align: center
+}
+
+.sub-navbar {
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  width: 100%;
+  text-align: right;
+  padding-right: 20px;
+  transition: 600ms ease position;
+  background: linear-gradient(90deg, rgba(32, 182, 249, 1) 0%, rgba(32, 182, 249, 1) 0%, rgba(33, 120, 241, 1) 100%, rgba(33, 120, 241, 1) 100%);
+
+  .subtitle {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  &.draft {
+    background: #d0d0d0;
+  }
+
+  &.deleted {
+    background: #d0d0d0;
+  }
+}
+
+.link-type,
+.link-type:focus {
+  color: #337ab7;
+  cursor: pointer;
+
+  &:hover {
+    color: rgb(32, 160, 255);
+  }
+}
+
+.filter-container {
+  padding-bottom: 10px;
+
+  .filter-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+}
+
+//refine vue-multiselect plugin
+.multiselect {
+  line-height: 16px;
+}
+
+.multiselect--active {
+  z-index: 1000 !important;
+}
+
+
+
+
+
+
+html,body,a,button,input,textarea,img,ul,li,p,dl,dd,h1,h2,h3,h4,h5,h6{
+    
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  font-size: 16px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+a,button,input,textarea,img{
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  // -webkit-user-select: none;
+  outline: none;
+  -webkit-appearance: none;
+  border: none;
+}
+body {
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+  // font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, 微软雅黑, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #333;
+  word-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+  /* transition:.5s; */
+}
+
+a {
+  text-decoration: none;
+  color: #4078c0;
+}
+
+img {
+  border-style: none;
+}
+
+ul{
+  list-style: none;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  padding: 4px 10px;
+  // border: 1px solid #ddd;
+  // background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  padding: 0;
+  width: 10px;
+  height: 44px;
+  // background-color: rgba(0, 0, 0, .2);
+  background-color: $linkcolor;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  // height: 44px;
+  background-color: transparent;
+}
+@media screen and (max-width: 600px) {
+  ::-webkit-scrollbar-track {
+    border-radius: 0;
+    padding: 4px 10px;
+    // border: 1px solid #ddd;
+    // background-color: #fff;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    padding: 0;
+    width: 2px;
+    height: 44px;
+    // background-color: rgba(0, 0, 0, .2);
+    background-color: $linkcolor;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 2px;
+    // height: 44px;
+    background-color: transparent;
+  }
+}
+
+.container{
+  display: block;
+  // height: calc(100vh - 64px);
+  overflow: scroll;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 5;
+  // position: relative;
+}
+.content-right{
+  position: fixed;
+  top: 40px;
+  // height: 400px;
+  // height: calc(100vh - 64px)
+  overflow-y: scroll;
+}
+
+
+
+.el-row {
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.el-col {
+  border-radius: 4px;
+}
+.bg-purple-dark {
+  background: #99a9bf;
+}
+.bg-purple {
+  // background: #d3dce6;
+  padding: 5px;
+}
+.bg-purple-light {
+  background: #e5e9f2;
+}
+.grid-content {
+  border-radius: 4px;
+  min-height: 36px;
+  
+  // overflow: scroll;
+}
+.row-bg {
+  padding: 10px 0;
+  background-color: #f9fafc;
+}
+
+.loading_text{
+  text-align: center;
+  color: #999;
+}
+.list_empty{
+  text-align: center;
+  font-size: 16px;
+  color: #999;
+}
+
+
+.forum_con{
+  padding: 10px;
+  background: #fff;
+  // margin-left: 10px;
+  // margin-bottom: 20px;
+  width: 270px;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 6px;
+  // min-height: 300px;
+  .fir{
+    display: flex;
+    font-size: 16px;
+    img{
+      width: 50px;
+      height: 50px;
+      // border-radius: 50%;
+    }
+    div{
+      flex: 1;
+      padding-left: 20px;
+      line-height: 50px;
+    }
+  }
+  .fensi{
+    display: flex;
+    line-height: 24px;
+    padding: 20px 0;
+    div{
+      font-size: 14px;
+      color: #666;
+      flex: 1;
+      text-align: center;
+      
+    }
+    div:nth-child(1){
+      border-right: 1px solid #ddd;
+    }
+  }
+  .forum_desc{
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .forum_add{
+    margin-bottom: 10px;
+  }
+  .el-button{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+  }
+}

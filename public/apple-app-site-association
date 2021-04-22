@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "C6MQJCD834.fun.chao.app",
+        "paths": ["/*", "*", "/"]
+      },
+      {
+        "appID": "UU8M9WJ637.fun.chao.app",
+        "paths": ["/*", "*", "/"]
+      }
+    ]
+  }
+}
