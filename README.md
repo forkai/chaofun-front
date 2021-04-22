@@ -18,9 +18,11 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
+## 本地编译
 ```
 npm run serve
 或者
 npm run dev
+
+# 鸣谢
 
