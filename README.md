@@ -29,6 +29,9 @@ npm run dev
 ## 接口
 [后端接口文档](https://chao.fun/swagger-ui/index.html)
 
+# 其他
+如有其他疑问，也可添加微信 cijianzy 咨询
+
 # 感谢
 
 
